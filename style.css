@@ -1,0 +1,14 @@
+.tic_tac_grid {
+
+}
+
+.button__row {
+    display: flex;
+    flex-basis: 31%;
+    flex-flow: row wrap;
+}
+
+.button__box {
+    width: 100px;
+    height: 100px;
+}
