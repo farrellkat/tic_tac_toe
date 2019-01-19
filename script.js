@@ -5,13 +5,15 @@ let buttonClicked = (id) => {
     document.getElementById(id).addEventListener("click", function () {
         if (turn === 1) {
             button = document.getElementById(id)
-            button.innerHTML = "X";
+            button.innerHTML = "X"
             turn++
             button.disabled=true
         } else {
             if (turn === 2) {
                 button = document.getElementById(id)
-                button.innerHTML = "O";
+                button.innerHTML = "O"
+                button.className += " blue"
+                console.log(button)
                 turn--
                 button.disabled=true
             }

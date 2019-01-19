@@ -45,6 +45,10 @@ display: flex;
     font-family: 'Fredoka One', cursive;
 }
 
+.blue {
+    color: blue;
+}
+
 .button__box:hover {
     background-color: rgb(34, 39, 39);
     animation-name: yourAnimation;
