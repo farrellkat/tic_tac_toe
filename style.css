@@ -1,14 +1,52 @@
-.tic_tac_grid {
+@keyframes yourAnimation{
+    0%{
+        transform: scale(1.1);
+        box-shadow: 2px 2px 10px black;
+        }
+    100%{
+        transform: scale(1.1);
+        box-shadow: 2px 2px 10px black;
+        }
+}
 
+.button__box:hover{
+    animation: yourAnimation 10s 1 0s linear;
+}
+
+.tic_tac_grid {
+/* background-color: black; */
+width: 300px;
+height: 300px;
+border: 5px solid black;
+display: flex;
+
+}
+
+.button__board {
+    display: flex;
+    align-content: center;
+    justify-content: center;    
 }
 
 .button__row {
     display: flex;
     flex-basis: 31%;
     flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .button__box {
     width: 100px;
     height: 100px;
+    opacity: 100;
+    font-size: 50px;
+    vertical-align: center; 
+    color: red;
+    font-family: 'Fredoka One', cursive;
+}
+
+.button__box:hover {
+    background-color: rgb(34, 39, 39);
+    animation-name: yourAnimation;
+    cursor: pointer;
 }
