@@ -24,10 +24,6 @@ const winCheck = (player, playerArray) => winningCombos.forEach((combo) => {
     }
 })
 
-if (game === 10 && winner === false) {
-    alert("It's a tie")
-}
-
 let buttonClicked = (id) => {
     document.getElementById(id).addEventListener("click", function () {
         if (turn === 1) {
