@@ -23,7 +23,6 @@ display: flex;
 }
 
 .button__board {
-    display: flex;
     align-content: center;
     justify-content: center;    
 }
@@ -53,4 +52,16 @@ display: flex;
     background-color: rgb(34, 39, 39);
     animation-name: yourAnimation;
     cursor: pointer;
+}
+
+.play__button {
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 105px;
+    border-radius: 5p
+}
+
+.play__button:hover {
+    animation: yourAnimation 10s 1 0s linear;
 }
