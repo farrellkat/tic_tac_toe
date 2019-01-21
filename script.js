@@ -16,6 +16,12 @@ let resetGame = () => {
     })
 }
 
+// disable all buttons
+let disableAll = () => {for (var i = 1; i < 10; i++) {
+    button = document.getElementById(i)
+    button.disabled = true
+}}
+
 //winning Combonations
 let winningCombos = [
     [1, 2, 3],
@@ -35,6 +41,7 @@ const winCheck = (player, playerArray) => winningCombos.forEach((combo) => {
         alert(`${player} Wins!`)
         playAgain()
         resetGame()
+        disableAll()
     }
 })
 
